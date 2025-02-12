@@ -1,0 +1,56 @@
+Nov 25 13:58:10.023 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 25 13:58:10.024 HYPERVISOR: Started on IP = localhost, TCP port = 49924.
+Nov 25 13:58:10.156 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 25 13:58:10.157 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Lenovo\GNS3\projects\ipv6\project-files\dynamips 
+Nov 25 13:58:10.169 GENERAL: working_dir=C:\Users\Lenovo\GNS3\projects\ipv6\project-files\dynamips
+Nov 25 13:58:10.170 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Lenovo\GNS3\projects\ipv6\project-files\dynamips\632addbb-3f14-4de3-8eab-474e15cbb2bf 
+Nov 25 13:58:10.170 GENERAL: working_dir=C:\Users\Lenovo\GNS3\projects\ipv6\project-files\dynamips\632addbb-3f14-4de3-8eab-474e15cbb2bf
+Nov 25 13:58:10.170 HYPERVISOR: exec_cmd: vm create R1 2 c3745 
+Nov 25 13:58:10.172 VM: VM R1 created.
+Nov 25 13:58:10.173 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5003 
+Nov 25 13:58:10.173 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Nov 25 13:58:10.174 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Nov 25 13:58:10.181 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Nov 25 13:58:10.182 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 25 13:58:10.182 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60aa1da0 
+Nov 25 13:58:10.184 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Lenovo/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Nov 25 13:58:10.184 HYPERVISOR: exec_cmd: c3745 set_mac_addr R1 c402.6ab8.0000 
+Nov 25 13:58:10.186 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Nov 25 13:58:10.187 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Nov 25 13:58:11.599 HYPERVISOR: exec_cmd: nio create_udp udp-0a215e0a-6647-4fb2-a00c-538f84c3a8ea 10002 127.0.0.1 10003 
+Nov 25 13:58:11.927 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-0a215e0a-6647-4fb2-a00c-538f84c3a8ea 
+Nov 25 13:58:11.928 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 25 13:58:12.151 HYPERVISOR: exec_cmd: nio create_udp udp-f74f9786-f710-49db-a5e1-b031a0af3dc4 10010 127.0.0.1 10011 
+Nov 25 13:58:12.154 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-f74f9786-f710-49db-a5e1-b031a0af3dc4 
+Nov 25 13:58:12.155 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 25 13:58:57.188 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Nov 25 13:58:57.191 VM: VM Ghost created.
+Nov 25 13:58:57.237 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Lenovo/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Nov 25 13:58:57.250 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 25 13:58:57.251 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\Lenovo\GNS3\projects\ipv6\project-files\dynamips\c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Nov 25 13:58:57.253 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Nov 25 13:58:57.254 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 25 13:58:57.278 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Nov 25 13:58:57.285 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 25 13:58:57.752 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 25 13:58:57.755 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 25 13:58:58.010 VM: VM Ghost shutdown.
+Nov 25 13:58:58.012 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Nov 25 13:58:58.015 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 25 13:58:58.015 VM: VM Ghost destroyed.
+Nov 25 13:58:58.035 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 25 13:58:58.035 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\Lenovo\GNS3\projects\ipv6\project-files\dynamips\c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Nov 25 13:58:58.037 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 25 13:58:58.051 HYPERVISOR: exec_cmd: vm set_config R1 configs\i2_startup-config.cfg 
+Nov 25 13:58:58.052 HYPERVISOR: exec_cmd: vm start R1 
+Nov 25 14:08:45.999 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 25 14:08:46.001 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 25 14:08:46.159 VM: VM R1 shutdown.
+Nov 25 14:08:46.161 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 25 14:08:48.988 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 25 14:08:48.989 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 25 14:08:49.001 HYPERVISOR: exec_cmd: vm delete R1 
+Nov 25 14:08:49.001 VM: VM R1 destroyed.
+Nov 25 14:08:49.004 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 25 14:08:49.432 HYPERVISOR: Stopped.
+Nov 25 14:08:49.434 GENERAL: reset done.
